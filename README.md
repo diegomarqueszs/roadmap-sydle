@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/SYDLE_logo.png" alt="Alt text" width="200" height="200">
+  <img src="https://github.com/diegomarqueszs/sydle-foundations/raw/main/img/image.png" alt="Alt text" width="600" height="300">
 </div>
 
 <h1 align="center">Roadmap de estudos SYDLE</h1>
