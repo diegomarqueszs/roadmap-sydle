@@ -1,0 +1,44 @@
+.bloc-1{
+    background-color: #252526;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    border: 3px solid red;
+    margin: 20px;
+}
+
+.bloc-1 h1{
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.bloc-2{
+    padding: 20px;
+    margin: 20px;
+    border: 3px dotted gray; 
+    color: rgb(77, 76, 76);
+}
+
+.categorias{
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid  gray; 
+    border-radius: 20px;
+}
+
+.categorias h2{
+    text-align: center;
+
+}
+
+.categorias ul{
+    list-style: square;
+}
+
+.categorias li{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+}

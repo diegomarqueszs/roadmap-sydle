@@ -1,0 +1,24 @@
+//variaveis
+$font-stanck:  Arial, Helvetica, sans-serif;
+$light-color: #f4f4f4;
+$primary-color: #0eafff;
+$secondary-color: #ff8700;
+$color_checkbox_default:#59c1f5;
+$transition: .3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$width: 2em;
+$height: $width/2;
+
+// Set text color based on background
+@function set-text-color($color){
+    @if(lightness($color) > 70){
+        @return #333;
+    }@else{
+        @return #fff;
+    }
+}
+
+// Set background & text color
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color);
+}

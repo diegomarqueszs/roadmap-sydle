@@ -1,0 +1,128 @@
+@import 'config'; 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --body-bg: #0eafff;
+    --color: #fff;
+}
+
+.dark-mode:root{
+    --body-bg: #121212;
+    --color: #bb86fc;
+}
+
+body{
+    background-color: $light-color;
+    font-family: $font-stanck;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.showcase{
+    //@include set-background(var(--body-bg));
+    background-color: var(--body-bg);
+    color: var(--color);
+    height: 600px;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+
+        li{
+            padding: 15px;
+        }
+        label{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        a{
+            color: set-text-color($primary-color);
+        }
+
+        a:hover{
+            color: $secondary-color;
+        }
+    }
+
+    //mesma coisa que dizer .showcase.content
+    &-content{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        img{
+            width: 50%;
+        }
+
+        h1{
+            font-size: 50px;
+            line-height: 1.2;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+.toggle{
+  
+    .toggle-control{
+      transition: $transition;
+       width: $width;
+       height: $height;
+       display: block;
+      border: 2px solid $color_checkbox_default;
+      border-radius: $height;
+      background-color: rgba(black,.06);
+      position: relative;
+      &:after{
+        transition: $transition;
+        content: "";
+        width: $width/2.8;
+        height: $height/1.4;
+        display: block;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 1px 2px rgba(black, .1),0 3px 2px rgba(#ff8800,.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    
+   input{
+        display: none;
+        &:checked + .toggle-control{
+            border-color: $secondary-color;
+            background-color: $secondary-color;
+            &:after{
+                left: $width/2;
+            }
+        }
+    } 
+}
+
+@import 'utilities'; 
+@import 'buttons'; 
+@import 'mobile';

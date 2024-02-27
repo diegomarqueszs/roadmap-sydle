@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "components/custom-welcome/custom-welcome.js",
+    "components/my-component/my-component.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "4.12.4",
+    "typescriptVersion": "5.3.3"
+  },
+  "collections": [],
+  "bundles": []
+}
